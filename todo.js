@@ -5,4 +5,10 @@ function addItem(){
 	newItem.appendChild(text);
 	newItem.classList.add("list-group-item")
 	document.getElementById("todoList").appendChild(newItem);
+/*
+	let btn = document.createElement("BUTTON");
+	btn.innerHTML = "delete";
+	li.appendChild(btn);
+
+	*/
 }
