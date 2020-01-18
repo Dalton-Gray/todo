@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To do List</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div id="app">
+		<h1>To Do List</h1>
+		<form id="todoForm">
+			<input type="text" id="todoInput">
+			<button type="button" onclick="javascript: addItem()" class="btn btn-primary">Add Item</button>
+		</form>
+		<ol id="todoList" class="list-group">
+		</ol>
+	</div>
+	<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
