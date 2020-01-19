@@ -16,24 +16,10 @@ function addItem(){
 	btn.innerHTML = "remove";
 	btn.classList.add("btn");
 	btn.classList.add("btn-danger");
-	btn.id = id;
 	document.getElementById("item" + id).appendChild(btn);
 
 	btn.onclick = function() {
-		window.alert("test");
+		var div = this.parentElement;
+		div.style.display = "none";
 	};
 }
-
-/*
-function deleteButton(){
-
-
-}
-
-*/
-
-
-document.getElementById("1").addEventListener('click', (event) => {
-	window.alert("test");
-
-})
