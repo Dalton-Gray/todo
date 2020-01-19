@@ -10,26 +10,30 @@ function addItem(){
 	newItem.classList.add("list-group-item")
 	newItem.id = "item" + id;
 	document.getElementById("todoList").appendChild(newItem);
-	deleteButton();
-
-
-
-}
-
-
-function deleteButton(){
-// Create a "close" button and append it to each list item
+	
+	// Create a "close" button and append it to each list item
 	let btn = document.createElement("BUTTON");
 	btn.innerHTML = "remove";
 	btn.classList.add("btn");
 	btn.classList.add("btn-danger");
 	btn.id = id;
 	document.getElementById("item" + id).appendChild(btn);
+
+	btn.onclick = function() {
+		window.alert("test");
+	};
 }
 
-document.getElementById("btn-danger").addEventListener('click', (event) => {
-	document.getElementById("item")
+/*
+function deleteButton(){
+
+
+}
+
+*/
+
+
+document.getElementById("1").addEventListener('click', (event) => {
+	window.alert("test");
 
 })
-
-
