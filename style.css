@@ -4,6 +4,13 @@
 	align-items: center;
 }
 .list-group-item{
-	padding-right: 30rem;
+	width: 30rem;
 }
 
+.btn-danger{
+	float: right;
+}
+
+#todoInput{
+	margin: 1rem;
+}
